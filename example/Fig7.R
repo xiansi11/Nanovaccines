@@ -74,7 +74,7 @@ source("my_ggbiplot.R")
 csv_file <- "1st invivo study young vs aged all data tables.csv"
 if (!file.exists(csv_file)) stop("Data file not found: ", csv_file)
 
-dat0 <- read.csv(csv_file, check.names = FALSE)
+dat0 <- read.csv(csv_file)
 
 ## convert the Mass of dead mouse to NA
 dat0$MassDay6 <- suppressWarnings(as.numeric(dat0$MassDay6))
