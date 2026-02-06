@@ -3,6 +3,20 @@
 ##------------------------------------------------------###
 
 
+## Ensure we always run relative to the script location (example/)
+args <- commandArgs(trailingOnly = FALSE)
+file_arg <- grep("^--file=", args, value = TRUE)
+script_path <- sub("^--file=", "", file_arg)
+script_dir <- normalizePath(dirname(script_path))
+setwd(script_dir)
+
+## Make sure output dir exists
+dir.create("res", showWarnings = FALSE, recursive = TRUE)
+
+## Optional: print session info to logs (help debugging on GitHub Actions)
+message("Working dir: ", getwd())
+
+
 library("bayesplot")
 library("rstanarm")
 library("ggplot2")
