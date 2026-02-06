@@ -4,13 +4,13 @@ LICENSE
 .gitignore
 renv.lock (或 sessionInfo.txt)
 
-code/                 # 入口脚本（最重要）
+code/                
   00_setup.R
   02_make_figures.R
   03_make_supp_figs.R
-  10_paths.R          # 统一路径（强烈推荐）
+  10_paths.R          
 
-R/                    # 共享函数（从各子项目抽出来）
+R/                    
   data_prep.R
   data_combine.R
   plot_combined.R
@@ -18,9 +18,9 @@ R/                    # 共享函数（从各子项目抽出来）
   plot_pca.R
   ...
 
-data/                 # “最终用于画图”的数据（尽量统一）
-  raw/                # 原始数据（若可公开）
-  processed/          # 预处理后（csv/rds/rda）
+data/                 
+  raw/                
+  processed/         
   README_data.md
 
 outputs/
@@ -28,7 +28,7 @@ outputs/
   tables/
   logs/
 
-archive/              # 你 zip 里原来的每个文件夹原样放这
+archive/              
  OCR/
   code_invivo/
   ...
