@@ -6,6 +6,7 @@
 library("bayesplot")
 library("rstanarm")
 library("ggplot2")
+source("forest.plot.R")
 library(dplyr)
 library(ggplot2)
 library(tidyr)
