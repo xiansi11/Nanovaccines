@@ -6,17 +6,20 @@ R code to reproduce key statistical analyses and figures for the Nanovaccines ma
 > The GitHub Actions workflow (`run-example`) runs this example end-to-end and uploads the outputs as an artifact.
 
 ## Contents
-- Overview
-- Repository contents
-- System requirements
-- Installation guide
-- Demo: reproduce Fig.7 (minimal example)
-  - A) Run locally
-  - B) Run via GitHub Actions (no local setup)
-- Expected outputs
-- Notes on data availability
-- License
-- Citation
+
+- [Overview](#overview)
+- [Repository contents](#repository-contents)
+- [System requirements](#system-requirements)
+- [Installation guide](#installation-guide)
+- [Demo: reproduce Fig.7 (minimal example)](#demo-reproduce-fig7-minimal-example)
+  - [A) Run locally](#a-run-locally)
+  - [B) Run via GitHub Actions (no local setup)](#b-run-via-github-actions-no-local-setup)
+- [Expected outputs](#expected-outputs)
+- [Notes on data availability](#notes-on-data-availability)
+- [License](#license)
+- [Citation](#citation)
+
+---
 
 ## Overview
 This repository contains analysis scripts and helper functions used to generate figures and statistical results reported in the manuscript.
@@ -108,7 +111,10 @@ After a successful run, the following files (or similarly named outputs) should 
    - `PCA_combine_detail_Aged.csv`
    - `PCA_combine_detail_Young.csv`
 
+## Notes on data availability
 
+- `The example/` folder includes a dataset sufficient to run Fig.7 and generate representative outputs.
+- Full raw datasets may not be publicly hosted in this repository. If full reproduction is required, data access will follow the study’s data sharing policies and/or repository links provided in the manuscript.
 
 ## License
 
