@@ -87,8 +87,7 @@ install.packages(c(
 3 Click **Run workflow** 
 
 4 After it finishes, download the artifact:
-
-         **example-output** (contains `example/res/*`)
+  - **example-output** (contains `example/res/*`)
 
 ### Expected outputs
 After a successful run, the following files (or similarly named outputs) should appear in `example/res/`:
