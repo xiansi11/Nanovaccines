@@ -80,11 +80,11 @@ install.packages(c(
 
 ### B) Run via GitHub Actions (recommended for reviewers)
 
-- Go to the repository → Actions tab
-- Select workflow run-example
-- Click Run workflow (workflow_dispatch)
-- After it finishes, download the artifact:
-         example-output (contains example/res/*)
+1 Go to the repository → **Actions** tab
+2 Select workflow **run-example**
+3 Click **Run workflow** 
+4 After it finishes, download the artifact:
+         **example-output** (contains `example/res/*`)
 
 ### Expected outputs
 After a successful run, the following files (or similarly named outputs) should appear in `example/res/`:
