@@ -1,37 +1,64 @@
 # Nanovaccines
 
-This repository contains R code (and limited example data) used to generate figures and statistical results for the Nanovaccines manuscript.
+R code to reproduce key statistical analyses and figures for the Nanovaccines manuscript.
 
-> **Note on data availability:** Full raw/complete datasets may not be included in this repository.  
-> We provide either (i) a minimal reproducible subset, or (ii) example data sufficient to run representative analyses and reproduce example outputs.  
-> If additional data are required for full reproduction, they will be made available via an appropriate data-sharing mechanism (e.g., controlled access, institutional repository, or upon reasonable request), consistent with ethical and privacy constraints.
+> **For peer review / quick validation**, we provide a fully runnable **Fig.7 minimal example** under `example/`.
+> The GitHub Actions workflow (`run-example`) runs this example end-to-end and uploads the outputs as an artifact.
 
----
+## Contents
+- Overview
+- Repository contents
+- System requirements
+- Installation guide
+- Demo: reproduce Fig.7 (minimal example)
+  - A) Run locally
+  - B) Run via GitHub Actions (no local setup)
+- Expected outputs
+- Notes on data availability
+- License
+- Citation
 
-## Repository structure (current)
+## Overview
+This repository contains analysis scripts and helper functions used to generate figures and statistical results reported in the manuscript.
+A minimal reproducible example is provided for Fig.7 to facilitate editor/reviewer evaluation.
 
-- `.github/workflows/`  
-  GitHub Actions workflows for automated runs (e.g., running the example pipeline).
-
-- `R/`  
-  Main analysis scripts and helper functions (project-wide).
-
-- `data/`  
-  Project input data files (CSV).  
-  **Tip:** Large raw data should generally not be committed to GitHub. Use a minimal subset or a link to an external archive if needed.
-
+## Repository contents
 - `example/`  
-  A self-contained reproducible example (currently includes `Fig7.R`, helper scripts, and a small input CSV).
+  Minimal, runnable Fig.7 example (script + required helper functions + minimal dataset).
+- `.github/workflows/`  
+  CI workflow to run the Fig.7 example and upload outputs as an artifact.
+- `R/`  
+  Full analysis scripts and helper functions used in the project.
+- `data/`  
+  Project data (full raw datasets may not be publicly hosted here; see “Notes on data availability” below).
 
-- `example/res/`  
-  Output folder used by the example run (generated during execution).  
-  This folder can exist in the repo with a `.gitkeep`, but typically outputs do **not** need to be committed.
+## System requirements
+### OS requirements
+Tested on:
+- GitHub Actions: `ubuntu-latest` (see Actions logs)
 
----
+### Software requirements
+- R (>= 4.1 recommended; GitHub Actions uses the default R from `r-lib/actions/setup-r`)
 
-## Quick start (run the Fig.7 example locally)
+### Hardware requirements
+The Fig.7 minimal example should run on a standard laptop/desktop.
 
-### 1) Clone the repository
-```bash
-git clone https://github.com/<YOUR-ORG-OR-USERNAME>/<YOUR-REPO>.git
-cd <YOUR-REPO>
+## Installation guide
+### Install R
+Install R from CRAN: https://cran.r-project.org/
+
+### Install required R packages (Fig.7 minimal example)
+The Fig.7 example uses the following R packages (minimum set):
+- ggplot2, dplyr, tidyr, ggrepel
+- emmeans, boot
+- cowplot, gridExtra, knitr, stringr, tidyverse
+- bayesplot, rstanarm
+
+Install them in R:
+```r
+install.packages(c(
+  "ggplot2","dplyr","tidyr","ggrepel",
+  "emmeans","boot",
+  "cowplot","gridExtra","knitr","stringr","tidyverse",
+  "bayesplot","rstanarm"
+))
