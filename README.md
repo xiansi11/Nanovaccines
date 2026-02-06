@@ -91,27 +91,28 @@ install.packages(c(
 
 ### Expected outputs
 After a successful run, the following files (or similarly named outputs) should appear in `example/res/`:
-- PCA plots:
-    - Fig7_PCA_Aged.png
-    - Fig7_PCA_Young.png
-- Forest plots:
-   - Fig7_forest_overall.png
-   - Fig7_forest_Aged.png
-   - Fig7_forest_Young.png
-- Objective plot:
-   - Fig7_E_objective_plot.png
-- Summary tables (CSV):
-   - Fig7_contrasts_overall.csv
-   - Fig7_contrasts_by_age.csv
-   - PCA_combine_Aged.csv, PCA_combine_Young.csv
-   - PCA_combine_detail_Aged.csv
-   - PCA_combine_detail_Young.csv
+- **PCA plots**:
+    - `Fig7_PCA_Aged.png`
+    - `Fig7_PCA_Young.png`
+- **Forest plots**:
+   - `Fig7_forest_overall.png`
+   - `Fig7_forest_Aged.png`
+   - `Fig7_forest_Young.png`
+- **Objective plot**:
+   - `Fig7_E_objective_plot.png`
+- **Summary tables (CSV)**:
+   - `Fig7_contrasts_overall.csv`
+   - `Fig7_contrasts_by_age.csv`
+   - `PCA_combine_Aged.csv`
+   - `PCA_combine_Young.csv`
+   - `PCA_combine_detail_Aged.csv`
+   - `PCA_combine_detail_Young.csv`
 
 
 
 ## License
 
-See LICENSE.
+See `LICENSE`.
 
 ## Citation
 
