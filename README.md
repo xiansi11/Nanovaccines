@@ -81,9 +81,13 @@ install.packages(c(
 ### B) Run via GitHub Actions (recommended for reviewers)
 
 1 Go to the repository → **Actions** tab
+
 2 Select workflow **run-example**
+
 3 Click **Run workflow** 
+
 4 After it finishes, download the artifact:
+
          **example-output** (contains `example/res/*`)
 
 ### Expected outputs
