@@ -1,29 +1,37 @@
-# Nanovaccines (private)
+# Nanovaccines
 
-This repository contains R code and data used to generate figures and statistical results for the Nanovaccines manuscript.
+This repository contains R code (and limited example data) used to generate figures and statistical results for the Nanovaccines manuscript.
 
-## Repository structure
+> **Note on data availability:** Full raw/complete datasets may not be included in this repository.  
+> We provide either (i) a minimal reproducible subset, or (ii) example data sufficient to run representative analyses and reproduce example outputs.  
+> If additional data are required for full reproduction, they will be made available via an appropriate data-sharing mechanism (e.g., controlled access, institutional repository, or upon reasonable request), consistent with ethical and privacy constraints.
 
-- `R/figures/`  
-  Figure-generation scripts (e.g., `Fig2.R`, `Fig7.R`, `FigS4.R`).
-- `R/functions/`  
-  Helper functions sourced by figure scripts (e.g., `plot_pca.R`, `plot_combined.R`, `data_prep.R`, `my_fviz_cluster.R`).
+---
+
+## Repository structure (current)
+
+- `.github/workflows/`  
+  GitHub Actions workflows for automated runs (e.g., running the example pipeline).
+
+- `R/`  
+  Main analysis scripts and helper functions (project-wide).
+
 - `data/`  
-  Input data files (CSV).
-- `res/`  
-  Generated figures/tables/results data (created locally when running; not required to commit).
+  Project input data files (CSV).  
+  **Tip:** Large raw data should generally not be committed to GitHub. Use a minimal subset or a link to an external archive if needed.
 
-> If your files are currently in the repo root, you can move them into these folders (GitHub: edit file name → add path like `R/figures/Fig7.R`).
+- `example/`  
+  A self-contained reproducible example (currently includes `Fig7.R`, helper scripts, and a small input CSV).
 
-## Requirements
+- `example/res/`  
+  Output folder used by the example run (generated during execution).  
+  This folder can exist in the repo with a `.gitkeep`, but typically outputs do **not** need to be committed.
 
-- R (>= 4.1 recommended)
-- R packages used in this project include (non-exhaustive):
-  `ggplot2`, `dplyr`, `tidyr`, `lme4`, `lmerTest`, `ggrepel`, `psych`, `ggh4x`, `ComplexHeatmap`, `circlize`, `factoextra`, `devtools`
+---
 
-Install packages (example):
-```r
-install.packages(c(
-  "ggplot2","dplyr","tidyr","lme4","lmerTest","ggrepel","psych","ggh4x",
-  "ComplexHeatmap","circlize","factoextra","devtools"
-))
+## Quick start (run the Fig.7 example locally)
+
+### 1) Clone the repository
+```bash
+git clone https://github.com/<YOUR-ORG-OR-USERNAME>/<YOUR-REPO>.git
+cd <YOUR-REPO>
