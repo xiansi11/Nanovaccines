@@ -29,17 +29,15 @@ jobs:
             any::dplyr
             any::tidyr
             any::ggrepel
-            any::lme4
-            any::lmerTest
-            any::psych
-            any::ggh4x
-            any::bayesplot
-            any::rstanarm
-            any::Rfast2
+            any::emmeans
+            any::boot
             any::cowplot
             any::gridExtra
+            any::knitr
+            any::stringr
             any::tidyverse
             any::bayesplot
+            any::rstanarm
             
 
       - name: Run example
