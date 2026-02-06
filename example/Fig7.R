@@ -27,7 +27,7 @@ trt.colorPal =c(rgb(220,105,125,maxColorValue = 255),
                 rgb(112, 112, 112,maxColorValue = 255),
                 rgb(230,159,0,maxColorValue = 255),
                 rgb(86,180,233,maxColorValue = 255))
-dat0 = read.csv('./data/1st invivo study young vs aged all data tables.csv')
+dat0 = read.csv('1st invivo study young vs aged all data tables.csv')
 ## convert the Mass of dead mouse to NA
 dat0$MassDay6 = as.numeric(dat0$MassDay6) 
 dat0 = dat0 %>%
@@ -185,7 +185,7 @@ for (age in list("Aged", "Young")){
 #### #### #### #### #### #### ####
 
 # linear equal weight
-dat0 = read.csv('./data/1st invivo study young vs aged all data tables.csv')
+dat0 = read.csv('1st invivo study young vs aged all data tables.csv')
 data = read.csv("res/PP(CA_combine_detail_AgedYoung.csv")
 data$logAbs = scale(data$logAbs)
 data$logViral=scale(data$logViral)
