@@ -55,14 +55,14 @@ The Fig.7 example uses the following R packages (minimum set):
 - bayesplot, rstanarm
 
 Install them in R:
-```r
+```
 install.packages(c(
   "ggplot2","dplyr","tidyr","ggrepel",
   "emmeans","boot",
   "cowplot","gridExtra","knitr","stringr","tidyverse",
   "bayesplot","rstanarm"
 ))
-```r
+```
 ## Demo: reproduce Fig.7 (minimal example)
 ###  A) Run locally
 
