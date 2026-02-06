@@ -33,6 +33,7 @@ jobs:
             any::lmerTest
             any::psych
             any::ggh4x
+            any::bayesplot
 
       - name: Run example
         run: Rscript example/Fig7.R
