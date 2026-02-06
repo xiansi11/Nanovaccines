@@ -66,13 +66,17 @@ install.packages(c(
 ## Demo: reproduce Fig.7 (minimal example)
 ###  A) Run locally
 
-- Clone the repository
-     - git clone https://github.com/<YOUR-ORG-OR-USERNAME>/Nanovaccines.git
-     - cd Nanovaccines
-- Run the Fig.7 example script
+1 Clone the repository
+  ```bash
+   git clone https://github.com/<YOUR-ORG-OR-USERNAME>/Nanovaccines.git
+   cd Nanovaccines
+  ```
+2 Run the Fig.7 example script
+  ```bash
      - Rscript example/Fig7.R
-- Outputs will be written to:
-    - example/res/ (figures + tables)
+  ```
+3 Outputs will be written to:
+    - `example/res/ `(figures + tables)
 
 ### B) Run via GitHub Actions (recommended for reviewers)
 
