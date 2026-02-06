@@ -62,7 +62,7 @@ install.packages(c(
   "cowplot","gridExtra","knitr","stringr","tidyverse",
   "bayesplot","rstanarm"
 ))
-
+```r
 ## Demo: reproduce Fig.7 (minimal example)
 ###  A) Run locally
 
