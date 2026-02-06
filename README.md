@@ -62,3 +62,49 @@ install.packages(c(
   "cowplot","gridExtra","knitr","stringr","tidyverse",
   "bayesplot","rstanarm"
 ))
+
+## Demo: reproduce Fig.7 (minimal example)
+###  A) Run locally
+
+- Clone the repository
+     - git clone https://github.com/<YOUR-ORG-OR-USERNAME>/Nanovaccines.git cd Nanovaccines
+- Run the Fig.7 example script
+     - Rscript example/Fig7.R
+- Outputs will be written to:
+    - example/res/ (figures + tables)
+
+### B) Run via GitHub Actions (recommended for reviewers)
+
+- Go to the repository → Actions tab
+- Select workflow run-example
+- Click Run workflow (workflow_dispatch)
+- After it finishes, download the artifact:
+       - example-output (contains example/res/*)
+
+### Expected outputs
+After a successful run, the following files (or similarly named outputs) should appear in `example/res/`:
+- PCA plots:
+    Fig7_PCA_Aged.png
+    Fig7_PCA_Young.png
+- Forest plots:
+    Fig7_forest_overall.png
+    Fig7_forest_Aged.png
+    Fig7_forest_Young.png
+- Objective plot:
+    Fig7_E_objective_plot.png
+- Summary tables (CSV):
+   Fig7_contrasts_overall.csv
+   Fig7_contrasts_by_age.csv
+   PCA_combine_Aged.csv, PCA_combine_Young.csv
+   PCA_combine_detail_Aged.csv
+   PCA_combine_detail_Young.csv
+
+
+
+## License
+
+See LICENSE.
+
+## Citation
+
+If you use this code, please cite the Nanovaccines manuscript (and/or add DOI here once available).
