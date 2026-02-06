@@ -35,6 +35,12 @@ jobs:
             any::ggh4x
             any::bayesplot
             any::rstanarm
+            any::Rfast2
+            any::cowplot
+            any::gridExtra
+            any::tidyverse
+            any::bayesplot
+            
 
       - name: Run example
         run: Rscript example/Fig7.R
